@@ -1,0 +1,185 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body {
+    background: #123;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.avatar {
+    background: #789;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 250px;
+    margin-left: 43.2%;
+    margin-right: 43.2%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2em;
+    border: #000 solid 5px;
+    box-shadow: inset 0 0 15px #000;
+}
+
+.avatar p {
+    border: #000 solid 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 3px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+}
+
+.avatar img {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border: #000 solid 5px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    box-shadow: 0 0 15px #000;
+}
+
+.bg{
+    background: #456;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.container-2{
+    display: grid;
+    border-radius: 10px;
+    animation: transitionIn 2s;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background: white;
+    color: black;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: inset 0 0 15px #000;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.3em;
+    font-style: bold;
+    font-weight: 700;
+    border: #000 solid 3px; 
+}
+
+.card{
+    background: rgb(53, 56, 53);
+    color: lightblue;
+    width: 90%;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border: #000 solid 2px;
+    box-shadow: 0 0 15px #000;
+}
+
+.navigation
+{
+    margin-bottom: -2.2%;
+    position: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navigation ul
+{
+    display: flex;
+}
+
+.navigation ul li
+{
+    border-radius: 50px;
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+}
+
+.navigation ul li a
+{
+    border-radius: 50px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a:hover
+{
+    background: lightgreen;
+}
+
+.navigation ul li a .icon
+{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+}
+
+.navigation ul li:hover a .icon
+{
+    color: black;
+    transform: translateY(12px);
+}
+
+.navigation ul li a .text
+{
+    border-radius: 50px;
+    position: absolute;
+    color: var(--clr);
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.navigation ul li:hover a .text
+{
+    color: black;
+    opacity: 1;
+    transform: translateY(-12px);
+}
